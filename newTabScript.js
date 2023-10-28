@@ -4,7 +4,7 @@ const quotes = [
   "The best employees are all very, very curious.",
   "Culture is built when people help each other progress.",
   "Great teams are built one person at a time.",
-  "You pay 2x for cheap talent. 1x payment in money 1x payment in time.",
+  "You pay 2x for cheap talent. <br /><br />1x payment in money.<br /> 1x payment in time.",
   "If you aren't offended by your employees enough, you have too many yes men.",
   "Your gross margin is your culture.",
   "Culture is built in behaviour and magnified in moments of consequence.",
@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Fetch a new quote or generate one, for example:
   const newQuote = quotes[Math.floor(Math.random() * quotes.length - 1)]; // Replace this with your dynamic content generation
+  // const newQuote = quotes[5];
 
   // Set the new content
   quoteElement.innerHTML = newQuote || quotes[1];
