@@ -4,9 +4,17 @@
   <title>Plum</title>
   <style>
     @font-face {
-      font-family: 'Chromatica';
+      font-family: 'Chromatica Bold';
       src: url('Chromatica-Bold.woff2') format('woff2'),
         url('Chromatica-Bold.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Chromatica';
+      src: url('Chromatica-Regular.woff2') format('woff2'),
+        url('Chromatica-Regular.woff') format('woff');
       font-weight: normal;
       font-style: normal;
     }
@@ -19,38 +27,62 @@
       margin: 2rem;
       padding: 0;
       position: relative;
-      display: flex;
+      display: grid;
       align-items: center;
+      height: 100vh;
+      overflow-y: hidden;
     }
 
     h1 {
       color: #FFE1BF;
-      max-width: 65%;
-      font-size: 4rem;
-      font-family: "Chromatica";
+      font-size: 6rem;
+      letter-spacing: -3px;
+      font-family: "Chromatica Bold";
       line-height: 1.4em;
+      margin: 0 6rem 0 4rem;
     }
 
     #plum {
       position: fixed;
       bottom: 2rem;
       right: 2rem;
+    }
+
+    #plum img {
       width: 64px;
       height: auto;
     }
 
+    #author {
+      margin: 1rem 6rem 0 4rem;
+      font-size: 1.75rem;
+      color: #FFE1BF;
+      opacity: 0.3;
+      font-family: "Chromatica", sans-serif;
+    }
+
+
+
     @media (max-width: 768px) {
       h1 {
-        font-size: 2.5rem;
-        max-width: 75%;
+        font-size: 3rem;
+        margin: 0 1rem 0 2rem;
+        letter-spacing: -1px;
+      }
+
+      #author {
+        font-size: 1.5rem;
       }
     }
   </style>
 </head>
 
 <body>
-  <h1 id="quote">This should get replaced</h1>
-  <img id="plum" src="plum-heart.png" />
+  <div>
+    <h1 id="quote">This should get replaced</h1>
+    <div id="author">John Doe</div>
+  </div>
+  <a id="plum" href="https://plumhq.com" target="_blank"><img src="plum-heart.png" /></a>
   <script src="newTabScript.js"></script>
 </body>
 
