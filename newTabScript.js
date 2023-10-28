@@ -20,7 +20,7 @@ const quotes = [
   "Culture means treating your employees as humans not robots.",
   "Betting your company's success on a future hire is a fool's bet.",
   "The most talented workers want freedom with responsibility.",
-  "Evaluate a person's skills without being biased by their previous employer's success..",
+  "Evaluate a person's skills without being biased by their previous employer's success.",
   "The most underrated skill a People Success leader can possess is impeccable and evocative writing.",
   "Taste (know what is great) matters as much as Talent (ability to do the work).",
   "The best talent are doing something else. Seek them out rather than expecting that they're going to seek you out.",
